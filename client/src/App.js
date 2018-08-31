@@ -30,7 +30,7 @@ class App extends Component {
           <Nav auth={auth} />
           <ControlledCarousel />
 
-          <Menu />
+          {/* <Menu /> */}
           <div>
             {/* <Route exact path="/" component={Home} /> */}
             <Route

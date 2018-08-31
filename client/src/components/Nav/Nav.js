@@ -37,19 +37,6 @@ class Nav extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg ">
-
-          {/* <div className="nav-left"> */}
-
-          <div className="nav-picture">
-            {/* <img
-                    src={require("./coaNicaragua.png")}
-                    id="navimg"
-                    alt=""
-                    className="navbar-brand"
-                    href="/"
-                  /> */}
-          </div>
-
           <div className="nav-left-text">
             <header className="header-container">
               <h6 className="header-item h1i">¡ FreeNica !</h6>
@@ -60,7 +47,6 @@ class Nav extends Component {
               </h5>
             </header>
           </div>
-          {/* </div> */}
 
           <button
             className="navbar-toggler"
@@ -80,13 +66,33 @@ class Nav extends Component {
                 {location === homeLocation ? (
                   ""
                 ) : (
-                    <Link to="/">
-                      <button className="btn">
-                        HOME
-                    </button>
-                    </Link>
-                  )}
+                  <Link to="/">
+                    <button className="btn">Home</button>
+                  </Link>
+                )}
               </li>
+
+              <li className="nav-item nav-link">
+                <Link to="/forum">
+                  <button className="btn">Blog</button>
+                </Link>
+              </li>
+              <li className="nav-item nav-link">
+                <Link to="/gallery">
+                  <button className="btn">Gallery</button>
+                </Link>
+              </li>
+              <li className="nav-item nav-link">
+                <Link to="/donate">
+                  <button className="btn orange">Donate</button>
+                </Link>
+              </li>
+
+
+
+
+
+
 
               <li className="nav-item nav-link">
                 {!loggedIn ? (
@@ -94,18 +100,18 @@ class Nav extends Component {
                     LOG IN
                   </button>
                 ) : (
-                    <button className="btn" onClick={this.props.auth.logout}>
-                      LOG OFF
+                  <button className="btn" onClick={this.props.auth.logout}>
+                    LOG OFF
                   </button>
-                  )}
+                )}
 
                 {loggedIn && canWrite ? (
                   <Link to="/createpost">
                     <div className="btn">Create a Post&nbsp; </div>
                   </Link>
                 ) : (
-                    ""
-                  )}
+                  ""
+                )}
                 {/* 
                 {loggedIn ? <Link to="/profile">Profile&nbsp;</Link> : ""} */}
               </li>
