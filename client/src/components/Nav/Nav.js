@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 
+
 class Nav extends Component {
   constructor(props) {
     super(props);
@@ -36,15 +37,18 @@ class Nav extends Component {
 
     return (
       <div>
+      <div className="signup"> Stay Informed! <span className="sign"> &nbsp; SIGN UP NOW &nbsp;</span> for email Updates!</div>
         <nav className="navbar navbar-expand-lg ">
           <div className="nav-left-text">
             <header className="header-container">
-              <h6 className="header-item h1i">¡ FreeNica !</h6>
+              <img src={require("../Nav/freenicalogo.png")} className="logo" />
+
+              {/* <h6 className="header-item h1i">¡ FreeNica !</h6>
 
               <h5 className="header-item h2i">
                 {" "}
-                <em>Happening Now</em>
-              </h5>
+                <em>Happening Now</em> 
+              </h5>*/}
             </header>
           </div>
 
@@ -83,25 +87,19 @@ class Nav extends Component {
                 </Link>
               </li>
               <li className="nav-item nav-link">
-                <Link to="/donate">
+                <Link to="/help">
                   <button className="btn orange">Donate</button>
                 </Link>
               </li>
 
-
-
-
-
-
-
               <li className="nav-item nav-link">
                 {!loggedIn ? (
                   <button className="btn" onClick={this.props.auth.login}>
-                    LOG IN
+                    Log In
                   </button>
                 ) : (
                   <button className="btn" onClick={this.props.auth.logout}>
-                    LOG OFF
+                    Log Off
                   </button>
                 )}
 

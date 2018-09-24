@@ -4,8 +4,8 @@ import "./App.css";
 import Auth from "./auth/Auth";
 import history from "./history";
 import ControlledCarousel from "./components/Header";
-import Nav from "./components/Nav";
-import Menu from "./components/Menu";
+// import Nav from "./components/Nav";
+import FixedNavbar from "./components/Nav/FixedNavbar";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 // import Donations from "./pages/Donations";
@@ -15,7 +15,7 @@ import Forum from "./pages/Forum";
 import Footer from "./components/Footer"
 
 import Callback from "./pages/Callback";
-import Profile from "./pages/Profile";
+import Profile from "./pages/Profile"
 
 // Snag the initial state that was passed from the server side
 // var initialState = JSON.parse(document.getElementById('initial-state').innerHTML)
@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <Router history={history}>
         <div className="App">
-          <Nav auth={auth} />
+          <FixedNavbar auth={auth} />
           <ControlledCarousel />
 
           {/* <Menu /> */}
