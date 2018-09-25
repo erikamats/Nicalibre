@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:100,500,700|Fira+Sans|Crimson+Text");
+
+:root {
+  /* --blue: #2654ab; */
+  --blue: #4485d3;
+  --darkblue:   #183b7d;
+  /* --orange: #f27831; */
+  --orange: #eac22f !important;
+  --yellow: rgba(233, 189, 12, 0.913);
+  --white: #e5ebf4;
+  --grey: rgb(242, 242, 242);
+  --gradient:  linear-gradient(to top, #1e3c72 5%, #193a76 1%, #3975bf 94%);
+  --display: 'Crimson Text', serif;
+  --text: "Barlow", sans-serif;
+  --text2: 'Fira Sans', sans-serif;
+
+}
+
+
+
 body {
   background: white;
   margin: 0;

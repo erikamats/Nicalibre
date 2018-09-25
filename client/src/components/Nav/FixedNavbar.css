@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Barlow:600|Vollkorn");
+/*@import url ("https://fonts.googleapis.com/css?family=Barlow:600|Vollkorn");
 
 :root {
-  /* --blue: #2654ab; */
+  --blue: #2654ab; 
   --blue: #4485d3;
   --orange: #f27831;
   --yellow: #FFAE00;
   --white: #e5ebf4;
   --display: "Vollkorn", serif;
   --text: "Barlow", sans-serif;
-}
+}*/
 
 .signup {
   height: 5vh;
@@ -27,7 +27,7 @@
 }
 nav{
     height: 70px;
-    background-image: linear-gradient(to top, #1e3c72 0%, #193a76 1%, #3975bf 100%);
+    background-image: linear-gradient(to top, #193a76 1%, #1e3c72 0%, #3975bf 100%);
        /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
 
 
@@ -51,7 +51,7 @@ nav{
 
 .navbar-dark .navbar-nav .nav-link {
   color: var(--white);
-  font-family: var(--display);
+  font-family: var(--text2);
   letter-spacing: 1.8px;
   font-size: 1.6vh;
   font-weight: 550 !important

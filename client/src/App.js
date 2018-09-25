@@ -28,6 +28,7 @@ class App extends Component {
       <Router history={history}>
         <div className="App">
           <FixedNavbar auth={auth} />
+          {/* Header File */}
           <ControlledCarousel />
 
           {/* <Menu /> */}

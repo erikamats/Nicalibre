@@ -1,61 +1,45 @@
-@import url("https://fonts.googleapis.com/css?family=Barlow:600|Vollkorn");
-
-:root {
-  /* --blue: #2654ab; */
-  --blue: #4485d3;
-  --orange: #f27831;
-  --yellow: rgba(233, 189, 12, 0.913);
-  --white: #e5ebf4;
-  --display: "Vollkorn", serif;
-  --text: "Barlow", sans-serif;
-}
+@import "../../App.css";
 
 
 .tweets-app {
-  height: 80vh;
+  height: 700px;
   overflow: scroll;
+/* border: 2px solid red; */
 
 }
-
 .notification-bar{
   background-color: var(--yellow) !important
 
 }
 
 
-
 @media all and (max-width: 480px) { 
-  .show{
+  .home-h1 {
+    height: 45px;
+    width: 250px;
+    margin:0 auto;
+    margin-top: -25px;
+    margin-bottom: 7px;
+    position: relative;
     display: flex;
-    flex: 1;
-    /* border: 2px solid red; */
-    font-family: var(--text)
+    justify-content: center;
+    align-content: center;
+    
 
+    font-family: var(--text);
+    font-size: 3vh;
+    background-image: var(--gradient);
+    border-radius: 2px;
+    z-index: 100;
   }
 
-  .show button{
-    height: 50px;
-     flex: 1;
-     cursor: pointer;
-     font-size: 1.8vh;
-     font-weight: 500 !important;
-    border-top: 10px solid grey;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-  }
-
-  a, a:active, a:hover {
-    color:black !important;
-    text-decoration: none;
-  }
-
-  .orange{
-    background-color: var(--orange);
-  }
-
-  .hide{
-    display: none
+  .home-h1 span {
+    font-size: 25px;
+    color: var(--white);
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 0px 3px black;
   }
 
 

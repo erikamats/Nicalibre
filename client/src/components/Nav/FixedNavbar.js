@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Container,
+ 
   Navbar,
   NavbarBrand,
   NavbarNav,
@@ -8,7 +8,7 @@ import {
   Collapse,
   NavItem,
   NavLink,
-  Fa
+  
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./FixedNavbar.css";
@@ -61,7 +61,7 @@ class FixedNavbar extends React.Component {
         
           <Navbar style={bgBlue} dark expand="md" scrolling fixed="top">
             <NavbarBrand href="/">
-              <img src={require("../Nav/freenicalogo.png")} className="logo" />
+              <img src={require("../Nav/freenicalogo.png")} className="logo" alt="logo"/>
             </NavbarBrand>
             <NavbarToggler onClick={this.onClick} />
             <Collapse isOpen={this.state.collapse} navbar>

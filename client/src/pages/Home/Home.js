@@ -7,7 +7,7 @@ import "../../pages/Home/Home.css";
 import axios from "axios";
 import io from 'socket.io-client';
 // import io from "socket.io";
-import { Link } from "react-router-dom";
+
 
 
 class Home extends Component {
@@ -29,7 +29,6 @@ class Home extends Component {
     // this.getPage = this.getPage.bind(this);
 
   }
-
 
   // refreshBlogs() {
   //   console.log("this should go!");
@@ -207,6 +206,8 @@ class Home extends Component {
     //   })
     //   .catch(err => console.log(err));
   };
+
+
   render() {
     // const loggedIn = this.props.auth.isAuthenticated();
     // const canWrite = this.props.auth.userHasScopes(["write:blog","roles: admin"]);
@@ -230,14 +231,10 @@ class Home extends Component {
           ""
         )}
         {loggedIn ? <Link to="/profile">Profile&nbsp;</Link> : ""}  */}
-        <div className="mobile-menu-donate show">
-            <button className="orange">
-            <Link to="/help"> DONATE </Link>
-            </button>
-            <button href="/find-your-united-way/" class="take-action">TAKE ACTION</button> 
+       
+        <div className="home-h1 hide"> 
+        <span>TRENDING NOW</span> 
         </div>
-
-        <h1 className="home-h1 hide">Trending Now </h1>
         <div className="card-container">
           <Wrapper>
             <div className="left">
