@@ -3,7 +3,7 @@ import { Router, Route, Redirect } from "react-router-dom";
 import "./App.css";
 import Auth from "./auth/Auth";
 import history from "./history";
-import ControlledCarousel from "./components/Header";
+// import ControlledCarousel from "./components/Header";
 // import Nav from "./components/Nav";
 import FixedNavbar from "./components/Nav/FixedNavbar";
 import Home from "./pages/Home";
@@ -29,7 +29,7 @@ class App extends Component {
         <div className="App">
           <FixedNavbar auth={auth} />
           {/* Header File */}
-          <ControlledCarousel />
+          {/* <ControlledCarousel /> */}
 
           {/* <Menu /> */}
           <div>
@@ -91,7 +91,14 @@ class App extends Component {
 
             <Route
               exact
-              path="/help"
+              path="/contact"
+              render={props => {
+                  return <Contact auth={auth} {...props} />;
+              }}
+            />
+          <Route
+              exact
+              path="/donate"
               render={props => {
                   return <Contact auth={auth} {...props} />;
               }}

@@ -104,7 +104,7 @@ class Header extends React.Component {
           <div className="row">
             <div className="mobile-menu-donate show">
               <button className="orange">
-                <Link to="/help"> DONATE </Link>
+                <Link to="/contact"> DONATE </Link>
               </button>
               <button href="/find-your-united-way/" className="take-action">
                 TAKE ACTION
@@ -124,7 +124,7 @@ class Header extends React.Component {
                   FREENICA IS FIGHTING FOR .... <em> *insert purpose here*</em>
                 </h3>
                 <button className="orange">
-                  <Link to="/help"> DONATE NOW</Link>
+                  <Link to="/contact"> DONATE NOW</Link>
                 </button>
               </div>
             </div>

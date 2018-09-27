@@ -7,9 +7,8 @@ import "../../pages/Home/Home.css";
 import axios from "axios";
 import io from 'socket.io-client';
 // import io from "socket.io";
-
-
-
+import ControlledCarousel from "../../components/Header";
+import "../../components/Header/Header.css";
 class Home extends Component {
   state = {
     tweets: [],
@@ -17,7 +16,8 @@ class Home extends Component {
     page: 0,
     paging: false,
     skip: 0,
-    done: false
+    done: false,
+   
   };
 
   constructor(props) {
@@ -29,6 +29,7 @@ class Home extends Component {
     // this.getPage = this.getPage.bind(this);
 
   }
+
 
   // refreshBlogs() {
   //   console.log("this should go!");
@@ -47,7 +48,7 @@ class Home extends Component {
   // }
 
   componentDidMount() {
-
+    this.showNewTweets();
     this.getTweets(10);
 
     var self = this;
@@ -211,8 +212,10 @@ class Home extends Component {
   render() {
     // const loggedIn = this.props.auth.isAuthenticated();
     // const canWrite = this.props.auth.userHasScopes(["write:blog","roles: admin"]);
+   
     return (
       <div className="container-home">
+          <ControlledCarousel />
         {/* <div> Check console to show current location of page</div>
       
         {!loggedIn ? (

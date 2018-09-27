@@ -1,14 +1,12 @@
 import React from "react";
 import {
- 
   Navbar,
   NavbarBrand,
   NavbarNav,
   NavbarToggler,
   Collapse,
   NavItem,
-  NavLink,
-  
+  NavLink
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./FixedNavbar.css";
@@ -58,10 +56,13 @@ class FixedNavbar extends React.Component {
     return (
       <div>
         <Router>
-        
           <Navbar style={bgBlue} dark expand="md" scrolling fixed="top">
             <NavbarBrand href="/">
-              <img src={require("../Nav/freenicalogo.png")} className="logo" alt="logo"/>
+              <img
+                src={require("../Nav/freenicalogo.png")}
+                className="logo"
+                alt="logo"
+              />
             </NavbarBrand>
             <NavbarToggler onClick={this.onClick} />
             <Collapse isOpen={this.state.collapse} navbar>
@@ -87,18 +88,20 @@ class FixedNavbar extends React.Component {
                   <NavLink to="/gallery">GALLERY</NavLink>
                 </NavItem>
                 <NavItem className="donate">
-                  <NavLink to="/help" className="donatefont" >DONATE</NavLink>
+                  <NavLink to="/contact" className="donatefont">
+                    DONATE
+                  </NavLink>
                 </NavItem>
 
                 <NavItem>
                   {!loggedIn ? (
-                  <button className="btn" onClick={this.props.auth.login}>
-                    Log In
-                  </button>
+                    <button className="btn" onClick={this.props.auth.login}>
+                      LOG IN
+                    </button>
                   ) : (
-                  <button className="btn" onClick={this.props.auth.logout}>
-                    Log Off
-                  </button>
+                    <button className="btn" onClick={this.props.auth.logout}>
+                      LOG OUT
+                    </button>
                   )}
                   {loggedIn && canWrite ? (
                     <NavLink to="/createpost">
@@ -110,9 +113,7 @@ class FixedNavbar extends React.Component {
                 </NavItem>
               </NavbarNav>
             </Collapse>
-              
           </Navbar>
-       
         </Router>
         {/* <Container style={container} className="text-center mt-5">
           <h2>This Navbar is fixed</h2>

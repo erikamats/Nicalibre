@@ -87,7 +87,7 @@ class Nav extends Component {
                 </Link>
               </li>
               <li className="nav-item nav-link">
-                <Link to="/help">
+                <Link to="/contact">
                   <button className="btn orange">Donate</button>
                 </Link>
               </li>

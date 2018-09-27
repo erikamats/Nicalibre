@@ -1,17 +1,32 @@
 @import "../../App.css";
-
+@import "../../components/Header/Header.css";
 
 .tweets-app {
-  height: 700px;
-  overflow: scroll;
-/* border: 2px solid red; */
+  height: 180px; 
+ /* border: 2px solid red;  */
+
+/* height: 700px;
+overflow: scroll; */
+
+}
+.tweets{
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  
+}
+.active{
+  display: inline-block !important;
+  width: 100%;
+  overflow-wrap:break-word;
+  height: 180px; 
 
 }
 .notification-bar{
-  background-color: var(--yellow) !important
-
+  background-color: var(--yellow) !important;
+  
 }
-
 
 @media all and (max-width: 480px) { 
   .home-h1 {
@@ -42,5 +57,6 @@
     text-shadow: 2px 0px 3px black;
   }
 
+ 
 
  }
