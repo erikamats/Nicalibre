@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import Home from "../../pages/Home";
 import {
   Carousel,
   CarouselItem,
@@ -100,14 +101,14 @@ class Header extends React.Component {
 
     return (
       <div>
-        <div style={{ paddingTop: "62px" }} className="container-fluid">
+        <div  className="container-fluid">
           <div className="row">
             <div className="mobile-menu-donate show">
               <button className="orange">
-                <Link to="/contact"> DONATE </Link>
+                <Link to="/donate"> DONATE </Link>
               </button>
-              <button href="/find-your-united-way/" className="take-action">
-                TAKE ACTION
+              <button >
+              <Link to="/contact"> TAKE ACTION </Link>               
               </button>
             </div>
 
@@ -115,8 +116,11 @@ class Header extends React.Component {
               <div
                 className="placeholder"
                 style={{
-                  backgroundImage: `url(https://res.cloudinary.com/matsi/image/upload/v1532482535/32969681_10160375320175383_6756658515013533696_n.jpg)`,
-                  objectPosition: " 50% 50%"
+                  backgroundImage: `url(https://www.telemundo.com/sites/nbcutelemundo/files/styles/article_cover_image/public/images/article/cover/2018/04/24/nicaragua.jpg?itok=XIkI_VeA)`,
+        
+                 objectFit:"50% 50%",
+                  width: "100%", 
+                
                 }}
               />
               <div className="placeholder-text">
@@ -153,7 +157,7 @@ class Header extends React.Component {
             </div>
 
             <div id="video-container"
-              className="col-sm-12 col-md-12 col-lg-8 video"
+              className="col-sm-12 col-md-12 col-lg-10 video"
               // style={{ position: "relative", paddingTop: "190px" }}
             >
             <div className="video-title">
@@ -183,7 +187,7 @@ class Header extends React.Component {
                 </ul>
               </header>
             </div> */}
-            <div className="col-sm-12 col-md-6 col-lg-4 carousel-main">
+            <div className="col-sm-12 col-md-6 col-lg-6 carousel-main">
             temp for carousel - mongo
               <Carousel
                 activeIndex={activeIndex}
@@ -210,6 +214,7 @@ class Header extends React.Component {
             </div>
           </div>
         </div>
+
       </div>
     );
   }

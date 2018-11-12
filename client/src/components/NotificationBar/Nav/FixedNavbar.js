@@ -64,7 +64,9 @@ class FixedNavbar extends React.Component {
                 alt="logo"
               />
             </NavbarBrand>
-            <NavbarToggler onClick={this.onClick} />
+            {!this.state.isWideEnough && (
+              <NavbarToggler onClick={this.onClick} />
+            )}
             <Collapse isOpen={this.state.collapse} navbar>
               <NavbarNav right>
                 <NavItem active>

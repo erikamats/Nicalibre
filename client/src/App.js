@@ -5,7 +5,9 @@ import Auth from "./auth/Auth";
 import history from "./history";
 // import ControlledCarousel from "./components/Header";
 // import Nav from "./components/Nav";
-import FixedNavbar from "./components/Nav/FixedNavbar";
+// import FixedNavbar from "./components/Nav/FixedNavbar";
+
+import Example from "./components/NotificationBar/Nav/NewFixed";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 // import Donations from "./pages/Donations";
@@ -27,7 +29,10 @@ class App extends Component {
     return (
       <Router history={history}>
         <div className="App">
-          <FixedNavbar auth={auth} />
+          {/* <FixedNavbar auth={auth} /> */}
+
+            <Example auth={auth}/>
+      
           {/* Header File */}
           {/* <ControlledCarousel /> */}
 

@@ -238,10 +238,11 @@ class Home extends Component {
         <div className="home-h1 hide"> 
         <span>TRENDING NOW</span> 
         </div>
+
         <div className="card-container">
           <Wrapper>
-            <div className="left">
-            </div>
+            <div className="left"/>
+           
             <section className="tweets-app">
               <div className="notificationBar">
                 <NotificationBar count={this.state.count} onShowNewTweets={this.showNewTweets} />

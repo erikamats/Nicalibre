@@ -24,7 +24,6 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "if-env": "^1.0.4",
-    "mdbreact": "^4.7.1",
     "mongoose": "^5.0.17",
     "socket.io": "^2.1.1",
     "twitter": "^1.7.1",
