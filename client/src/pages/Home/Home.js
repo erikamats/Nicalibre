@@ -7,8 +7,8 @@ import "../../pages/Home/Home.css";
 import axios from "axios";
 import io from 'socket.io-client';
 // import io from "socket.io";
-
-
+import ControlledCarousel from "../../components/Header";
+import "../../components/Header/Header.css";
 class Home extends Component {
   state = {
     tweets: [],
@@ -16,7 +16,8 @@ class Home extends Component {
     page: 0,
     paging: false,
     skip: 0,
-    done: false
+    done: false,
+   
   };
 
   constructor(props) {
@@ -28,8 +29,6 @@ class Home extends Component {
     // this.getPage = this.getPage.bind(this);
 
   }
-
-
 
 
   // refreshBlogs() {
@@ -48,10 +47,8 @@ class Home extends Component {
   //   this.setState({blogs});
   // }
 
-
-
   componentDidMount() {
-
+    this.showNewTweets();
     this.getTweets(10);
 
     var self = this;
@@ -210,11 +207,15 @@ class Home extends Component {
     //   })
     //   .catch(err => console.log(err));
   };
+
+
   render() {
     // const loggedIn = this.props.auth.isAuthenticated();
     // const canWrite = this.props.auth.userHasScopes(["write:blog","roles: admin"]);
+   
     return (
       <div className="container-home">
+          <ControlledCarousel />
         {/* <div> Check console to show current location of page</div>
       
         {!loggedIn ? (
@@ -233,11 +234,15 @@ class Home extends Component {
           ""
         )}
         {loggedIn ? <Link to="/profile">Profile&nbsp;</Link> : ""}  */}
-        <h1 className="home-h1">Trending Now </h1>
+       
+        <div className="home-h1 hide"> 
+        <span>TRENDING NOW</span> 
+        </div>
+
         <div className="card-container">
           <Wrapper>
-            <div className="left">
-            </div>
+            <div className="left"/>
+           
             <section className="tweets-app">
               <div className="notificationBar">
                 <NotificationBar count={this.state.count} onShowNewTweets={this.showNewTweets} />

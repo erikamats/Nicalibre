@@ -7,10 +7,31 @@ class Contact extends Component {
   render() {
     return (
       <div className="container-contact">
-        <div className="contact">
-          <div className="form-text">
-            <h1>Want to reach out? </h1>
-            <p>Please submit your and your feedback!</p>
+        <div className="donate-title">
+          <span>JOIN THE FIGHT</span>
+        </div>
+        <div className="contributions">
+          {" "}
+          <p> Your generous contribution will ....</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Donate securely, below.</p>
+        </div>
+        <div className="frame row col-12">
+          <Iframe
+            url="https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=apoyar-a-nicaragua&image=1&coinfo=0&preview=1"
+            width="98%"
+            height="500px"
+            id="myId"
+            className="myClassname"
+            display="initial"
+            position="relative"
+          />
+        </div>
+
+        <div className="contact col-12">
+          <div className="form-text col-12">
+            <h1>CONTACT US</h1>
+            <p> Have a question or want to share your feedback? Let us know! </p>
           </div>
 
           <form className="form col-12">
@@ -66,22 +87,10 @@ class Contact extends Component {
             </div>
             <div className="form-group">
               <button type="submit" className="btn submit-button">
-                Sign in
+                SUBMIT
               </button>
             </div>
           </form>
-        </div>
-
-        <div className="frame row">
-          <Iframe
-            url="https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=apoyar-a-nicaragua&image=1&coinfo=0&preview=1"
-            width="450px"
-            height="500px"
-            id="myId"
-            className="myClassname"
-            display="initial"
-            position="relative"
-          />
         </div>
       </div>
     );
