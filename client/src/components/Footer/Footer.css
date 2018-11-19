@@ -4,7 +4,7 @@
     bottom: 0;
     width: 100%;
     height: 40px;  
-    border-top: 5px solid var(--yellow);
+    border-top: 2px solid var(--yellow);
     animation: 1s ease-out 0s 1 slideInFromBottom;
     /* display: block; */
     text-align: center;
@@ -18,14 +18,14 @@
     letter-spacing: .6px;
     font-family: var(--text2);
     font-weight: 100;
-    color: var(--white);
+    color: var(--darkblue);
     text-align: center;
     width: 100%;
    
     line-height: 35px;
    height: 100%;
    margin-bottom: 0;
-   text-shadow: 1.5px 0px 3px black;
+  
 
 }
 

@@ -5,37 +5,12 @@
   padding-bottom: 2px;
   position: relative;
 }
-.nav-tabs {
-  display: grid;
-  grid-gap: 0;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
-  font-size: 1.5em !important;
-  /* list-style: none; */
-  font-weight: 900;
-  font-family: "Raleway", sans-serif !important;
-  top: 0;
-  background-color: white;
-  /* background: rgba(13, 116, 195, 0.173) ; */
-}
 
-a:link {
-  text-decoration: none;
-  color: rgb(13, 100, 195);
-}
 
-a:visited {
-  text-decoration: none;
-  color: rgb(13, 100, 195);
-}
 
-a:hover {
+a* {
   text-decoration: none;
-  color: rgb(13, 100, 195);
-}
-
-a:active {
-  text-decoration: none;
-  color: rgb(13, 100, 195);
+  /* color: rgb(13, 100, 195); */
 }
 
 .nav-item {
@@ -72,11 +47,7 @@ a:active {
   color: black;
 }
 
-.nav-tab:hover {
-  background: rgba(241, 201, 68, 0.758) s;
-  color:  rgb(13, 100, 195) !important;
-  text-decoration: none;
-}
+
 /* on hover text color */
 .nav-link:hover,
 .btn:hover {

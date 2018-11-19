@@ -1,0 +1,19 @@
+.logo {
+  width: 180px;
+}
+.navbar {
+  background-image: var(--gradient) !important;
+}
+
+.navbar-brand{
+  margin-left: .7em
+}
+
+
+
+.navbar-light .navbar-nav .nav-link{
+  color: var(--darkblue) !important;
+  font-family: var(--text);
+  font-size: 1.2em;
+  margin-right: .5em
+}

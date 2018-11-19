@@ -16,15 +16,17 @@ class Contact extends Component {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p>Donate securely, below.</p>
         </div>
+
         <div className="frame row col-12">
           <Iframe
             url="https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=apoyar-a-nicaragua&image=1&coinfo=0&preview=1"
             width="98%"
-            height="500px"
-            id="myId"
+            // height="550px"
+            // id="myId"
             className="myClassname"
-            display="initial"
+            // display="initial"
             position="relative"
+
           />
         </div>
 

@@ -7,7 +7,7 @@
     padding-top: 65px;
     display: -webkit-box; /* Safari */
     display: block;
-    height: 100% !important
+    height: 100%;
     
   }
 
@@ -45,32 +45,33 @@
     width: 90%;
     font-family: var(--text2);
     background-color: var(--grey);
-
     overflow-wrap: break-word;
+    height: 100%
 
-  
+  }
+  .contact{
+    position: relative;
+    height: 100%;
   }
 /* .contact .col-12{
 height: 100%;
 } */
 
-  .frame  {
+  .frame .row {
     display: -webkit-box; /* Safari */
     display: block;
-    flex: 0;
-    height: 500px !important;
-    /* padding-top: 30px !important; */
+
+    padding-top: 30px !important;
     float: left;
     align-items: center;
     width: 98%;
-
- 
+    position: relative; 
   }
-  
+
 
   .form-text {
     display: block;
-    margin-top: .25rem;
+    margin-top: .5rem;
     height: 100%;
     
 }
@@ -103,6 +104,7 @@ height: 100%;
   letter-spacing: 1px;
  
  }
+ 
 }
 
 
@@ -113,25 +115,22 @@ height: 100%;
     margin: 20px;
 
   }
-  } */
+  } 
 /* -----original------ */
 
 .container-contact {
   margin: 2vh;
-  position: absolute;
+  position: relative;
   padding-top: 62px;
 
 }
-/* 
-h1 {
-  background: white !important;
-  color: var(--darkBlue) ;
-} */
+
 
 .contact {
   float: left;
   padding: 0;
-  top: 60px;
+  position: relative;
+  top:5vh;
 }
 
 .form-text {
@@ -154,21 +153,22 @@ h1 {
   justify-content: center;
   align-items: center !important;
   padding-top: 5%;
+  height:100%;
+  position: relative;
 }
 
 .myClassname {
   position: relative;
   display: initial;
-  height: 20vh;
+  height: 44vh !important;
   width: 100vw;
-  margin-bottom: 5vh;
+  margin-bottom: 30px;
 }
 
 btn.submit-button {
   color: rgb(13, 100, 195);
   border-radius: 0.3em;
-  /* border: 0; */
-  /* border: 0.1em solid rgba(199, 197, 197, 0.482) !important; */
+
   padding: 0.3em 1.5em;
   margin: 0px 4px;
   font-family: "Raleway", sans-serif !important;

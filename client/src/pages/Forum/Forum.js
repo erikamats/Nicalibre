@@ -168,12 +168,14 @@ class Forum extends Component {
                 <div key={post.id} className="row">
                   <Card>
                     <CardHeader>
-                      {post.title}
+                    <div className="blogTitle">
+                    {post.title}
+                    </div>
+                     
                       {loggedIn ? (
                         <Button
                           onClick={() => this.removeItem(post.id)}
-                          TEXT-color="danger"
-                          className="float-right"
+                          className="deletePost"
                         >
                           Delete Post <i className="far fa-trash-alt" />
                         </Button>
@@ -184,7 +186,8 @@ class Forum extends Component {
                     <CardImg
                       top
                       width="100%"
-                      // src="{post.imageUrl} alt={post.title} "
+                      src={post.imageUrl} 
+                      alt={post.title} 
                     />
                     <CardBody>
                       <CardText>{post.blogContent}</CardText>

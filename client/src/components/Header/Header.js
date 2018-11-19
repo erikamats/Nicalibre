@@ -103,8 +103,8 @@ class Header extends React.Component {
       <div>
         <div  className="container-fluid">
           <div className="row">
-            <div className="mobile-menu-donate show">
-              <button className="orange">
+            <div className="mobile-menu-donate shows">
+              <button className="crimson">
                 <Link to="/donate"> DONATE </Link>
               </button>
               <button >
@@ -125,9 +125,9 @@ class Header extends React.Component {
               />
               <div className="placeholder-text">
                 <h3>
-                  FREENICA IS FIGHTING FOR .... <em> *insert purpose here*</em>
+                  FREENICA IS FIGHTING FOR PEACE AND JUSTICE!
                 </h3>
-                <button className="orange">
+                <button className="crimson">
                   <Link to="/contact"> DONATE NOW</Link>
                 </button>
               </div>
@@ -169,6 +169,7 @@ class Header extends React.Component {
                 data-autoplay="true"
                 position="relative"
                 id="video"
+                height= "100%"
               />
             </div>
 
@@ -187,7 +188,7 @@ class Header extends React.Component {
                 </ul>
               </header>
             </div> */}
-            <div className="col-sm-12 col-md-6 col-lg-6 carousel-main">
+            <div className="col-sm-12 col-md-12 col-lg-12 carousel-main">
             temp for carousel - mongo
               <Carousel
                 activeIndex={activeIndex}
