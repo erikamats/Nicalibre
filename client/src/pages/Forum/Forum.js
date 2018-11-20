@@ -14,7 +14,7 @@ import {
   Input,
   Label
 } from "reactstrap";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
 import "../../pages/Forum/Forum.css";
 
 class Forum extends Component {
@@ -26,7 +26,8 @@ class Forum extends Component {
       allBlogs: [],
       created: "",
       imageUrl: "",
-      collapse: false
+      collapse: false,
+      editOn: false
     };
     this.toggle = this.toggle.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -95,6 +96,11 @@ class Forum extends Component {
   removeItem(blogId) {
     const blogRef = firebase.database().ref(`/allBlogs/${blogId}`);
     blogRef.remove();
+  }
+
+ updateItem(blogId) {
+    const blogRef = firebase.database().ref(`/allBlogs/${blogId}`);
+    blogRef.update();
   }
 
   render() {
@@ -168,6 +174,17 @@ class Forum extends Component {
                 <div key={post.id} className="row">
                   <Card>
                     <CardHeader>
+                    {loggedIn ? (
+                        <Button
+                          onClick={() => this.updateItem(post.id)}
+                          className="updatePost"
+                        >
+                           Edit Post &nbsp; <i className="fa fa-edit" />
+                        </Button>
+                      ) : (
+                        ""
+                      )}
+
                     <div className="blogTitle">
                     {post.title}
                     </div>
@@ -177,7 +194,7 @@ class Forum extends Component {
                           onClick={() => this.removeItem(post.id)}
                           className="deletePost"
                         >
-                          Delete Post <i className="far fa-trash-alt" />
+                          Delete Post &nbsp; <i className="far fa-trash-alt" />
                         </Button>
                       ) : (
                         ""

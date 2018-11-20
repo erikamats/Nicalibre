@@ -14,11 +14,8 @@ min-height: 90vh;
 .card {
   height: 100%;
   min-height: 268px;
-  /* margin-left: -15px; */
   margin: 15px;
   width: 100%;
-
-
 }
 
 .card-header, .card-footer{
@@ -27,16 +24,26 @@ min-height: 90vh;
 }
 
 .card-header{
-  justify-content: center
+  justify-content: center;
+  font-family: var(--text);
+
 }
 
 .blogTitle{
   color: var(--white);
-  font-size: 2em;
+  font-size: 2.1em;
+  
 }
-.deletePost{
-  float: right ;
+.updatePost{
+  float: left ;
   position: absolute;
+  left: 1em;
+  top: 20px;
+  }
+
+.deletePost{
+float: right ;
+ position: absolute;
 right: 1em;
 top: 20px;
 }
