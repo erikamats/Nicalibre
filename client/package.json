@@ -13,6 +13,7 @@
     "jquery": "3",
     "re-base": "2.3.0",
     "react": "^16.4.1",
+    "react-countup": "^4.0.0",
     "react-dom": "^16.4.1",
     "react-iframe": "^1.2.0",
     "react-popper": "^1.0.0-beta.6",

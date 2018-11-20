@@ -18,18 +18,22 @@
     font-size: 1.6vh;
     font-weight: bold;
     letter-spacing: 0.15vw;
+
   }
 
   a,
   a:active,
   a:hover {
-    color: black;
-    text-decoration: none;
+      text-decoration: none;
+    color: var(--white) ;
   }
 
-  .crimson {
-    background-color: rgb(228, 8, 52);
-    /* background-color: lightskyblue; */
+.white > a{
+  color: black
+}
+
+  .crimson{
+    background-image: var(--gradientBlue);
   }
 
   .hide {
@@ -55,12 +59,12 @@
     position: relative;
     text-align: left;
     font-family: var(--text);
-    top: -280px;
+    top: -300px;
     left: 0;
     z-index: 5;
     color: var(--white);
     background-color: rgba(0, 0, 0, 0.934);
-    width: 43vw;
+    width: 55vw;
     letter-spacing: 1px;
     margin-left: 20px;
   }
@@ -192,8 +196,17 @@
   .shows button {
     display: none !important;
   }
+
+  .crimson {
+    background-image: var(--gradient);
+    
+  } 
+  .crimson > a{
+    color: crimson
+  }
   .placeholder-text {
     width: 35vw;
+    top: -240px;
   }
 
   .stats-container {
@@ -207,7 +220,7 @@
     margin-top: -28px;
     font-family: var(--text);
     background-image: var(--gradient);
-    color: var(--darkblue);
+    /* color: var(--darkblue); */
     border-radius: 2px;
     z-index: 100;
     height: 52px;
@@ -216,11 +229,11 @@
   }
 
   .stats-title span {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bolder;
     color: var(--darkblue);
     text-shadow: 2px 0px 3px var(--white);
-    margin-top: 2px;
+    margin-top: -2px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -300,7 +313,7 @@
   .carousel-main {
     order: 3;
     height: 500px;
-    margin: 150px 0 160px;
+    margin: 9em 0 160px;
     justify-content: center;
    
   }
