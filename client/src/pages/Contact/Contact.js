@@ -7,36 +7,38 @@ class Contact extends Component {
   render() {
     return (
       <div className="container-contact">
-        <div className="donate-title">
-          <span>JOIN THE FIGHT</span>
-        </div>
-        <div className="contributions">
-          {" "}
-          <p> Your generous contribution will ....</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Donate securely, below.</p>
-        </div>
-
-        <div className="frame row col-12">
-          <Iframe
-            url="https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=apoyar-a-nicaragua&image=1&coinfo=0&preview=1"
-            width="98%"
-            // height="550px"
-            // id="myId"
-            className="myClassname"
-            // display="initial"
-            position="relative"
-
-          />
-        </div>
-
-        <div className="contact col-12">
-          <div className="form-text col-12">
-            <h1>CONTACT US</h1>
-            <p> Have a question or want to share your feedback? Let us know! </p>
+        <row>
+          <div className="contributions col-5 ">
+            <div className="donate-title">
+              <span>JOIN THE FIGHT</span>
+            </div>
+            <p className="generous"> Your generous contribution will ....</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>Donate securely, below.</p>
           </div>
 
-          <form className="form col-12">
+          <div className="frame row col-6 ">
+            <Iframe
+              url="https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=apoyar-a-nicaragua&image=1&coinfo=0&preview=1"
+              width="100%"
+              // height="550px"
+              // id="myId"
+              className="myClassname"
+              display="initial"
+              position="relative"
+            />
+          </div>
+        </row>
+
+        <div className="contact col-10 ">
+       
+         <div className="row justify-content-between"> 
+         <form className="form col-5  ">
             <div className="form-row">
               <div className="form-group col-md-6">
                 <label htmlFor="contactFirstName">First Name:</label>
@@ -93,7 +95,24 @@ class Contact extends Component {
               </button>
             </div>
           </form>
+      
+          <div className="form-text col-6">
+            <h1>CONTACT US</h1>
+            <p>
+              {" "}
+              Have a question or want to share your feedback? Let us know!{" "}
+            </p>
+            <i className="fab fa-facebook-square fa-2x"></i>
+            <i className="fab fa-twitter fa-2x"></i>
+            <i className="fab fa-instagram fa-2x"></i>
+            <br />
+          </div>
+        
+         </div>
+ 
+        
         </div>
+        
       </div>
     );
   }

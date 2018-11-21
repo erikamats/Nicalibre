@@ -7,8 +7,10 @@ min-height: 90vh;
   margin: 3vw 10vw;
 }
 
-.h1Title{
-  margin: 20px;
+.wrapper-forum > h1{
+  font-family: var(--display);
+  font-weight:bold;
+  color: var(--darkblue)
 }
 
 .card {
@@ -20,7 +22,7 @@ min-height: 90vh;
 
 .card-header, .card-footer{
   background-color: var(--blue);
-  height: 73px;
+  min-height: 73px;
 }
 
 .card-header{
@@ -39,6 +41,7 @@ min-height: 90vh;
   position: absolute;
   left: 1em;
   top: 20px;
+
   }
 
 .deletePost{
