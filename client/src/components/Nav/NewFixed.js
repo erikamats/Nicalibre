@@ -8,20 +8,22 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
+
 import "./NewFixed.css";
 
 export default class Example extends React.Component {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
+    this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
-      isOpen: false
+      collapsed: true
     };
   }
-  toggle() {
+
+  toggleNavbar() {
     this.setState({
-      isOpen: !this.state.isOpen
+      collapsed: !this.state.collapsed
     });
   }
   render() {
@@ -34,49 +36,48 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar light expand="md" >
-          <NavbarBrand href="/" >
-        
+          <NavbarBrand href="/" className="mr-auto">
             <img
               src={require("../Nav/freenicalogo.png")}
               className="logo"
               alt="logo"
             />
           </NavbarBrand>
-          <NavbarToggler onClick={this.toggle}  className="mr-2" />
-          <Collapse isOpen={this.state.isOpen} navbar>
+          <NavbarToggler onClick={this.toggleNavbar}  />
+          <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink to="/">
+                             
                   {location === homeLocation ? (
                     ""
                   ) : (
+                    <NavItem>
                     <NavLink href="/">
-                      <button className="btn">Home</button>
+                    Home
                     </NavLink>
+                    </NavItem>
                   )}
-                </NavLink>
-              </NavItem>
+                          
               <NavItem>
-                <NavLink href="/forum">Our Impact</NavLink>
+                <NavLink href="/forum">Our Purpose</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/gallery">Media</NavLink>
               </NavItem>
               <NavItem className="donate">
                 <NavLink href="/donate" className="donatefont">
-                  DONATE
+                  Donate
                 </NavLink>
               </NavItem>
 
               <NavItem>
                 {!loggedIn ? (
-                  <button className="btn" onClick={this.props.auth.login}>
-                    LOG IN
-                  </button>
+                  <NavLink className="login" onClick={this.props.auth.login}>
+                    Login
+                  </NavLink>
                 ) : (
-                  <button className="btn" onClick={this.props.auth.logout}>
-                    LOG OUT
-                  </button>
+                  <NavLink className="logout" onClick={this.props.auth.logout}>
+                    Logout
+                  </NavLink>
                 )}
                 {loggedIn && canWrite ? (
                   <NavLink to="/createpost">

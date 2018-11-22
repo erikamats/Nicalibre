@@ -1,27 +1,28 @@
 @import "../../App.css";
 
-@media all and (min-width: 320px)and (max-width: 767px) {
-  
+@media all and (min-width: 320px) {
   .container-contact {
     position: relative;
-    padding-top: 65px;
+    padding: 100px 0 18px;
     display: -webkit-box; /* Safari */
     display: block;
-    height: 100% !important
-    
+    height: 100%;
+ 
+ 
   }
 
   .donate-title {
     position: relative;
     display: flex;
     justify-content: center;
-  /* margin-top: 10px !important; */
-    margin: 10px auto -22.5px auto ;
-    font-family: var(--text);
-    background-image: var(--gradientYellow);
+    /* margin-top: 10px !important; */
+    top: -43px;
+    margin: -22.5px auto;
+    font-family: var(--text2);
+    background-image: var(--gradient);
     border-radius: 2px;
     z-index: 100;
-    height: 45px;
+
     width: 250px;
   }
 
@@ -32,79 +33,114 @@
     font-weight: bold;
     display: flex;
     justify-content: center;
-    text-shadow: 0px 1px 1px var(--white );
+    text-shadow: 0px 1px 1px var(--white);
   }
 
-  .contributions{
-
+  .contributions {
     position: relative;
-    color:black;
-    font-size: 20px;
-    margin: 0px auto 0px auto;
-    padding: 50px 0px 20px 0px;
-    width: 90%;
+    color: black;
+    font-size: 23px;
+    margin: 0 0 0 8%;
+    padding: 50px 5%;
     font-family: var(--text2);
     background-color: var(--grey);
-
     overflow-wrap: break-word;
-
-  
+    float: left;
+    height: 500px;
+    border-radius: 5px;
   }
-/* .contact .col-12{
-height: 100%;
-} */
 
-  .frame  {
+  .generous {
+    margin-top: 4%;
+  }
+
+  .frame .row {
     display: -webkit-box; /* Safari */
     display: block;
-    flex: 0;
-    height: 500px !important;
-    /* padding-top: 30px !important; */
+    padding-top: 30px !important;
     float: left;
     align-items: center;
-    width: 98%;
-
- 
-  }
+    position: relative;
   
+  }
+
+  .myClassname {
+    position: relative;
+    display: initial;
+    height: 530px !important;
+    margin-bottom: 30px;
+    right: 4%;
+  }
+
+  .contact {
+    position: relative;
+    height: 50vh;
+    margin: 100px auto;
+   
+    border-radius: 5px;
+  }
 
   .form-text {
-    display: block;
-    margin-top: .25rem;
+    /* display: block;*/
+    background-color: var(--blue);
     height: 100%;
+    float: left;
+    padding:6% 0 0;
+    vertical-align: middle;
+    border-radius: 1%;
+   
+  }
+
+  .form-text h1 {
+    font-size: 3em;
+ 
+    font-weight: bold;
+    font-family: var(--text2);
+    color: var(--orange);
+    text-shadow: 0px 1px 1px var(--darkblue);
+    letter-spacing: 1px;
+    margin-top: 5px
     
-}
- .form-text h1{
-  font-size: 38px;
-  margin-top: -70px;
-  font-weight: bold;
-  color: #183b7d;
-  border-radius: 2px;
-  text-shadow: 0px 1px 1px var(--white );
-  padding: 10px !important;
-  letter-spacing: 1px;
- 
- }
+  }
 
- .form-text p{
- margin: 25px auto 0px auto;
- font-style: italic;
- font-size: 18px;
- }
+  .form-text p {
+    margin: 25px auto 0px auto;
+    font-style: italic;
+    font-size: 1em;
+    color: white
+  }
+  .form-text > i {
+    width: 3em;
+    height: 5em !important;
+    margin-top: 6vh;
+  }
 
-
- .form-group > .submit-button{
-  background-image: var(--gradient);
-  width: 150px;
-  color: var(--white);
-  font-size: 18px;
-  font-family: var(--text);
-  font-weight: bold;
-  letter-spacing: 1px;
- 
- }
+.fab{
+  color: white
 }
 
+  .form {
+    display: inline-block;
+    left: 3%;
+ 
+    padding: 3.5% 0;
+    color: var(--darkblue);
+    text-shadow: 0px 1px .5px var(--grey);
+    font-family: var(--text);
+    font-size: 1.2em
+  }
+
+
+  .form-group > .submit-button {
+    background-image: var(--gradient);
+    width: 150px;
+    color: var(--darkblue);
+    font-size: 18px;
+    font-family: var(--text);
+    font-weight: bolder;
+    letter-spacing: 1px;
+  }
+}
 
 /* @media (min-width: 396px){
   .contributions{
@@ -113,25 +149,22 @@ height: 100%;
     margin: 20px;
 
   }
-  } */
+  } 
 /* -----original------ */
 
-.container-contact {
+/* .container-contact {
   margin: 2vh;
-  position: absolute;
+  position: relative;
   padding-top: 62px;
 
 }
-/* 
-h1 {
-  background: white !important;
-  color: var(--darkBlue) ;
-} */
+
 
 .contact {
   float: left;
   padding: 0;
-  top: 60px;
+  position: relative;
+  top:5vh;
 }
 
 .form-text {
@@ -154,21 +187,22 @@ h1 {
   justify-content: center;
   align-items: center !important;
   padding-top: 5%;
+  height:100%;
+  position: relative;
 }
 
 .myClassname {
   position: relative;
   display: initial;
-  height: 20vh;
+  height: 44vh !important;
   width: 100vw;
-  margin-bottom: 5vh;
+  margin-bottom: 30px;
 }
 
 btn.submit-button {
   color: rgb(13, 100, 195);
   border-radius: 0.3em;
-  /* border: 0; */
-  /* border: 0.1em solid rgba(199, 197, 197, 0.482) !important; */
+
   padding: 0.3em 1.5em;
   margin: 0px 4px;
   font-family: "Raleway", sans-serif !important;
@@ -203,4 +237,4 @@ button.submit-button:before {
   font-weight: 900;
   opacity: 1;
   border: 0 !important;
-}
+} */
