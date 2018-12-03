@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import { Link } from "react-router-dom";
 import Home from "../../pages/Home";
 import {
   Carousel,
@@ -8,12 +8,11 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from "reactstrap";
-
 import API from "../../utils/API";
 import Iframe from "react-iframe";
-
-import { Link } from "react-router-dom";
 import * as moment from "moment";
+import CountUp from 'react-countup';
+import "./Header.css";
 
 let now = moment().format("YYYY-MM-DD");
 let then = moment("2018-04-18", "YYYY-MM-DD");
@@ -103,11 +102,11 @@ class Header extends React.Component {
       <div>
         <div  className="container-fluid">
           <div className="row">
-            <div className="mobile-menu-donate show">
-              <button className="orange">
+            <div className="mobile-menu-donate shows">
+              <button className="crimson">
                 <Link to="/donate"> DONATE </Link>
               </button>
-              <button >
+              <button className="white">
               <Link to="/contact"> TAKE ACTION </Link>               
               </button>
             </div>
@@ -125,9 +124,9 @@ class Header extends React.Component {
               />
               <div className="placeholder-text">
                 <h3>
-                  FREENICA IS FIGHTING FOR .... <em> *insert purpose here*</em>
+                  FREENICA IS FIGHTING FOR PEACE AND JUSTICE!
                 </h3>
-                <button className="orange">
+                <button className="crimson">
                   <Link to="/contact"> DONATE NOW</Link>
                 </button>
               </div>
@@ -135,22 +134,22 @@ class Header extends React.Component {
 
             <div className="stats-container">
               <div className="stats-title">
-                <span>{numDays} DAYS SINCE PROTEST</span>
+                <span>IN JUST {numDays} DAYS </span>
               </div>
               <div className="stats">
                 <div className="stat" >
                   {" "}
-                  <span>318</span> 
+                  <span><CountUp end={318} duration={1.5} /></span> 
                   <p>people murdered </p>
                 </div>
                 <div className="stat">
                   {" "}
-                  <span>2,000</span> 
+                  <span><CountUp end={2000} duration={3} /></span> 
                   <p>people injured </p>
                 </div>
                 <div className="stat">
                   {" "}
-                  <span>300</span>      
+                  <span><CountUp end={300} duration={2} /></span>      
                    <p>people missing </p>
                 </div>
               </div>
@@ -169,6 +168,7 @@ class Header extends React.Component {
                 data-autoplay="true"
                 position="relative"
                 id="video"
+                height= "100%"
               />
             </div>
 
@@ -187,7 +187,7 @@ class Header extends React.Component {
                 </ul>
               </header>
             </div> */}
-            <div className="col-sm-12 col-md-6 col-lg-6 carousel-main">
+            <div className="col-sm-12 col-md-12 col-lg-12 carousel-main">
             temp for carousel - mongo
               <Carousel
                 activeIndex={activeIndex}

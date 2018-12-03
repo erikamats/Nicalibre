@@ -7,7 +7,7 @@ import history from "./history";
 // import Nav from "./components/Nav";
 // import FixedNavbar from "./components/Nav/FixedNavbar";
 
-import Example from "./components/NotificationBar/Nav/NewFixed";
+import Example from "./components/Nav/NewFixed";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 // import Donations from "./pages/Donations";

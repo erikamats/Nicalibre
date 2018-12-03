@@ -6,7 +6,7 @@ const app = express();
 const twitter = require('twitter');
 const config = require("./config");
 const streamHandler = require('./utils/streamHandler');
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3001;
 // Create a new ntwitter instance
 var twit = new twitter(config.twitter);
 

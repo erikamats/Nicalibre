@@ -43,7 +43,7 @@ export default class Menu extends React.Component {
             </Link>
           </NavItem>
 
-          <NavItem className=".nav-item">
+          <NavItem className="nav-item">
             <Link to="/forum">
               <NavLink
                 className={classnames({ active: this.state.activeTab === "2" })}
@@ -74,7 +74,7 @@ export default class Menu extends React.Component {
               </NavLink>
             </Link>
           </NavItem>
-          <NavItem className=".nav-item">
+          <NavItem className="nav-item">
             <Link to="/contact">
               <NavLink
                 className={classnames({ active: this.state.activeTab === "4" })}
