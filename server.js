@@ -14,9 +14,8 @@ var twit = new twitter(config.twitter);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // Serve up static assets
-if (process.env.NODE_ENV === "production") {
+
   app.use(express.static("client/build"));
-}
 
 // Disable etag headers on responses
 app.disable('etag');
